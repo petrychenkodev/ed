@@ -1,0 +1,122 @@
+@font-face {
+    font-family: ProximaNova; /* Имя шрифта */
+    src: url(ProximaNova-Regular.ttf); /* Путь к файлу со шрифтом */
+   }
+body{
+	height: 100vh;
+	background: url('img/bitmap.png');
+	background-size: cover;
+	margin: 0;
+	border: 1px solid #c58b5a;
+	margin: 100px 50px;
+}
+.logo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20vh;
+}
+.main-text{
+	font-family: ProximaNova;
+	  font-size: 60px;
+	  line-height: 1.48;
+	  letter-spacing: 2.3px;
+	  text-align: center;
+	  color: #c58b5a;
+	  margin-top: 15vh;
+}
+.contacts{
+	  font-family: ProximaNova;
+	  font-size: 35px;
+	  font-weight: normal;
+	  font-style: normal;
+	  font-stretch: normal;
+	  line-height: normal;
+	  letter-spacing: 1.8px;
+	  text-align: center;
+	  color: #ffffff;
+	  margin-top: 10vh;
+	  
+}
+.contacts span{
+	position: relative;
+}
+.contacts span::before{
+	content: '';
+	width: 133px;
+	height: 0;
+	border-top: 1px solid #fff;
+	position: absolute;
+	left: -205px;
+    top: 40px;
+}
+.contacts span::after{
+	content: '';
+	width: 133px;
+	height: 0;
+	border-top: 1px solid #fff;
+	position: absolute;
+	right: -166px;
+	top: 40px;
+}
+.opex{
+	width: 71px;
+	height: 28px;
+	display: flex;
+	margin: 0 auto;
+	margin-top: 15vh;
+	margin-bottom: 5vh;
+}
+@media only screen and (max-width: 1000px) {
+body {
+    margin: 50px 40px;
+}
+.logo {
+    margin-top: 15vh;
+}
+.main-text {
+    font-size: 50px;
+    margin-top: 10vh;
+}
+.contacts {
+    font-size: 30px;
+    margin-top: 8vh;
+}
+}
+@media only screen and (max-width: 768px) {
+	.logo {
+    margin-top: 11vh;
+}
+.main-text {
+    font-size: 40px;
+    margin-top: 7vh;
+}
+.contacts {
+    font-size: 30px;
+    margin-top: 8vh;
+}
+.contacts span::before{
+	display: none;
+}
+.contacts span::after{
+	display: none;
+	}
+}
+@media only screen and (max-width: 414px) {
+body{
+	border: none;
+}
+}
+@media only screen and (max-width: 375px) {
+.logo {
+    margin-top: 5vh;
+}
+.main-text {
+    font-size: 30px;
+    margin-top: 5vh;
+}
+.contacts {
+    font-size: 24px;
+    margin-top: 7vh;
+}
+}
